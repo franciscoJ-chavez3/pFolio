@@ -1,8 +1,8 @@
 <div class="container-fluid sidenav">
-  <nav class="navbar navbar-light mb-3">
+  <nav id="myNav" class="navbar navbar-light mb-3">
     <!-- Step 3: Toggle the value of the property when the toggler button is clicked. -->
-    <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
-      &#9776;
+    <button class="navbar-toggler bg-primary" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+      <span class="navbar-toggler-icon bg-primary"></span>
     </button>
 
     <!-- Step 2: Add the ngbCollapse directive to the element below. -->
@@ -10,19 +10,19 @@
       <ul class="navbar-nav bg-dark rounded-circle  d-flex flex-column ">
         <li class="nav-item active">
           <!-- Step 4: Close the menu when a link is clicked. -->
-          <a class="nav-link text-white text-center" [routerLink]="'.'" (click)="isMenuCollapsed = true">Home</a>
+          <a class="nav-link text-white text-center" href="#home" (click)="isMenuCollapsed = true">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white text-center" [routerLink]="'.'" (click)="isMenuCollapsed = true">About</a>
+          <a class="nav-link text-white text-center" href="#about" (click)="isMenuCollapsed = true">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white text-center" [routerLink]="'.'" (click)="isMenuCollapsed = true">Technology</a>
+          <a class="nav-link text-white text-center" href="#skills" (click)="isMenuCollapsed = true">Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white text-center" [routerLink]="'.'" (click)="isMenuCollapsed = true">Projects</a>
+          <a class="nav-link text-white text-center" href="#projects" (click)="isMenuCollapsed = true">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white text-center" [routerLink]="'.'" (click)="isMenuCollapsed = true">Contact</a>
+          <a class="nav-link text-white text-center" href="#contact" (click)="isMenuCollapsed = true">Contact</a>
         </li>
       </ul>
     </div>
